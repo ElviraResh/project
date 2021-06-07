@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalized.css">
+    <link rel="stylesheet" type="text/css" href="slick/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background-color"></div>
+    <header>
+        <div class="header">
+            <div class="container">
+                <!-- использование burger-menu -->
+                <div class="header__body">
+                    <a href="#" class="header__logo">
+                        <img src="img/header/Icon_logo.svg" alt="Логотип">
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li><a href="#" class="header__link">Мебель</a></li>
+                            <li><a href="#" class="header__link">Освещение</a></li>
+                            <li><a href="#" class="header__link">Текстиль</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__button">
+                        <button class="header__button-search"><img src="img/header/Icon_magnifier.svg" alt=""></button>
+                        <button class="header__button_basket"><img src="img/header/Icon_basket.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="products">
+        <div class="container">
+            <div class="products-slider">
+                <div class="products-slider__flex">
+                    <div class="products-slider__content">
+                        <h1>Дизайнерская мебель</h1>
+                        <p class="product-name">Кресло "Антиква"</p>
+                        <p class="product-price">$380<span class="product-price__sale">$240</span></p>
+                        <button class="content-buy__button">Купить</button>
+                    </div>
+                    <img src="img/products/Кресло Антиква.png" alt="Кресло Антиква">
+                </div>
+                <div class="products-slider__flex">
+                    <div class="products-slider__content">
+                        <h1>Дизайнерская мебель</h1>
+                        <p class="content-name">Кресло "Антиква"</p>
+                        <p class="content-price">$380</p><span><p class="content-price__sale">$240</p></span>
+                        <button class="content-buy__button">Купить</button>
+                    </div>
+                    <img src="img/products/Кресло Антиква.png" alt="Кресло Антиква">
+                </div>
+                <div class="products-slider__flex">
+                    <div class="products-slider__content">
+                        <h1>Дизайнерская мебель</h1>
+                        <p class="content-name">Кресло "Антиква"</p>
+                        <p class="content-price">$380</p><span><p class="content-price__sale">$240</p></span>
+                        <button class="content-buy__button">Купить</button>
+                    </div>
+                    <img src="img/products/Кресло Антиква.png" alt="Кресло Антиква">
+                </div>
+                <div class="products-slider__flex">
+                    <div class="products-slider__content">
+                        <h1>Дизайнерская мебель</h1>
+                        <p class="content-name">Кресло "Антиква"</p>
+                        <p class="content-price">$380</p><span><p class="content-price__sale">$240</p></span>
+                        <button class="content-buy__button">Купить</button>
+                    </div>
+                    <img src="img/products/Кресло Антиква.png" alt="Кресло Антиква">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--start burger-menu -->
+    <script src="js/menu_burg/jquery-3.4.1.js"></script> 
+	<script src="js/menu_burg/script.js"></script> 
+    <!-- end burger-menu -->
+    <!-- start slick slider -->
+    <script src="slick/js/jquery/dist/jquery.min.js"></script>
+    <script src="slick/js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.products-slider').slick({
+            dots: true, // точки внизу слайдера
+            prevArrow: '<div class="slider-arrow slider-arrow__left"></div>',
+            nextArrow: '<div class="slider-arrow slider-arrow__right"></div>'
+          });
+        });
+      </script>
+    <!-- end slick slider -->
+</body>
+</html>
