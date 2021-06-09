@@ -39,44 +39,77 @@
             </div>
         </div>
     </header>
-    <section class="products">
+    <main class="products">
         <div class="container">
             <div class="products-slider">
                 <div class="products-slider__flex">
                     <div class="products-slider__content">
                         <h1>Дизайнерская мебель</h1>
-                        <p class="product-name">Кресло "Антиква"</p>
-                        <p class="product-price">$380<span class="product-price__sale">$240</span></p>
-                        <button class="content-buy__button">Купить</button>
+                        <p class="products__name">Кресло "Антиква"</p>
+                        <p class="products__price">$380<span class="products__price-sale">$240</span></p>
+                        <button class="products__button-buy">Купить</button>
                     </div>
                     <img src="img/products/Кресло Антиква.png" alt="Кресло Антиква">
                 </div>
                 <div class="products-slider__flex">
                     <div class="products-slider__content">
                         <h1>Дизайнерская мебель</h1>
-                        <p class="content-name">Кресло "Антиква"</p>
-                        <p class="content-price">$380</p><span><p class="content-price__sale">$240</p></span>
-                        <button class="content-buy__button">Купить</button>
+                        <p class="products__name">Кресло "Антиква"</p>
+                        <p class="products__price">$380<span class="products__price-sale">$240</span></p>
+                        <button class="products__button-buy">Купить</button>
                     </div>
                     <img src="img/products/Кресло Антиква.png" alt="Кресло Антиква">
                 </div>
                 <div class="products-slider__flex">
                     <div class="products-slider__content">
                         <h1>Дизайнерская мебель</h1>
-                        <p class="content-name">Кресло "Антиква"</p>
-                        <p class="content-price">$380</p><span><p class="content-price__sale">$240</p></span>
-                        <button class="content-buy__button">Купить</button>
+                        <p class="products__name">Кресло "Антиква"</p>
+                        <p class="products__price">$380<span class="products__price-sale">$240</span></p>
+                        <button class="products__button-buy">Купить</button>
                     </div>
                     <img src="img/products/Кресло Антиква.png" alt="Кресло Антиква">
                 </div>
                 <div class="products-slider__flex">
                     <div class="products-slider__content">
                         <h1>Дизайнерская мебель</h1>
-                        <p class="content-name">Кресло "Антиква"</p>
-                        <p class="content-price">$380</p><span><p class="content-price__sale">$240</p></span>
-                        <button class="content-buy__button">Купить</button>
+                        <p class="products__name">Кресло "Антиква"</p>
+                        <p class="products__price">$380<span class="products__price-sale">$240</span></p>
+                        <button class="products__button-buy">Купить</button>
                     </div>
                     <img src="img/products/Кресло Антиква.png" alt="Кресло Антиква">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="news">
+        <div class="container">
+            <div class="news__flex">
+                <div class="news__flex-left">
+                    <div class="news-item__item-flex">
+                        <h2 class="news-item__title">Новинки</h2>
+                    </div>
+                    <div class="news-item item-1">
+                        <img src="img/new/Стул Смеркается.png" alt="Стул Смеркается">
+                        <p class="news-item__name">Стул "Смеркается"</p>
+                        <p class="news-item__price">$280</p>
+                    </div>
+                    <div class="news-item item-2">
+                        <img src="img/new/Люстра Облако.png" alt="Люстра Облако">
+                        <p class="news-item__name">Люстра "Облако"</p>
+                        <p class="news-item__price">$250</p>
+                    </div>
+                    <div class="news-item item-3">
+                        <img src="img/new/Стол Крем-брюле.png" alt="Стол Крем брюле">
+                        <p class="news-item__name">Стол "Крем брюле"</p>
+                        <p class="news-item__price">$320</p>
+                    </div>
+                </div>
+                <div class="news__flex-right">
+                    <div class="news-item item-4">
+                        <img src="img/new/Стул Белый шоколад.png" alt="Стул Белый шоколад">
+                        <p class="news-item__name">Стул офисный "Белый шоколад"</p>
+                        <p class="news-item__price">$120</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,9 +125,9 @@
     <script type="text/javascript">
         $(document).ready(function(){
           $('.products-slider').slick({
+            arrows: false, //стрелки
             dots: true, // точки внизу слайдера
-            prevArrow: '<div class="slider-arrow slider-arrow__left"></div>',
-            nextArrow: '<div class="slider-arrow slider-arrow__right"></div>'
+            customPaging: (slider, i) => `<span>0${i+1}</span>`
           });
         });
       </script>
