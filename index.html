@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Callium - продажа дизайнерской мебели">
     <title>Дизайнерская мебель "Callium"</title>
+    <link rel="preload" href="fonts/PlayfairDisplay-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AvenirNext-Demi.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AvenirNext-Regular.woff" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalized.css">
     <link rel="stylesheet" type="text/css" href="slick/css/slick.css"/>
@@ -117,7 +120,6 @@
             </div>
         </div>
     </section>
-
     <section class="reviews">
         <div class="container">
             <div class="reviews-slider">
@@ -144,7 +146,6 @@
                 </div>
                 <div class="reviews-slider__flex">
                     <div class="reviews-slider__wrap">
-                        <!-- <img src="img/reviews.jpg" alt="Елена Новикова"> -->
                     </div>
                     <h3 class="reviews-slider__title">Елена Новикова</h3>
                     <p class="reviews-slider__subtitle">студентка</p>
@@ -153,7 +154,6 @@
             </div>
         </div>
     </section>
-
     <section class="last-chance">
         <div class="container">
             <h2 class="last-chance__title">Последний шанс</h2>
@@ -171,49 +171,59 @@
                     <span>Кресла</span>
                 </label>
             </div>
-            <div class="last-chance__items-flex">
+            <div class="last-chance__slider">
                 <div class="last-chance__items">
-                    <div class="last-chance__decor-hover"></div>
-                    <p class="last-chance__name">Стул "Карамель"</p>
-                    <p class="last-chance__price-sale">$195<span class="last-chance__price">$245</span></p>
-                    <div class="last-chance__img">
-                        <img src="img/last_chance/Стул Карамель.png" alt="Стул Карамель">
+                    <div class="last-chance__items-flex">
+                        <div class="last-chance__decor-hover"></div>
+                        <p class="last-chance__name">Стул "Карамель"</p>
+                        <p class="last-chance__price-sale">$195<span class="last-chance__price">$245</span></p>
+                        <div class="last-chance__img">
+                            <img src="img/last_chance/Стул Карамель.png" alt="Стул Карамель">
+                        </div>
                     </div>
                     <button class="last-chance__button">Купить</button>
                 </div>
                 <div class="last-chance__items">
-                    <div class="last-chance__decor-hover"></div>
-                    <p class="last-chance__name">Стул "Облако"</p>
-                    <p class="last-chance__price-sale">$200<span class="last-chance__price">$250</span></p>
-                    <div class="last-chance__img">
-                        <img src="img/last_chance/Стул Облако.png" alt="Стул Облако">
+                    <div class="last-chance__items-flex">
+                        <div class="last-chance__decor-hover"></div>
+                        <p class="last-chance__name">Стул "Облако"</p>
+                        <p class="last-chance__price-sale">$200<span class="last-chance__price">$250</span></p>
+                        <div class="last-chance__img">
+                            <img src="img/last_chance/Стул Облако.png" alt="Стул Облако">
+                        </div>
                     </div>
                     <button class="last-chance__button">Купить</button>
                 </div>
                 <div class="last-chance__items">
-                    <div class="last-chance__decor-hover"></div>
-                    <p class="last-chance__name">Стул "Сова"</p>
-                    <p class="last-chance__price-sale">$240<span class="last-chance__price">$260</span></p>
-                    <div class="last-chance__img">
-                        <img src="img/last_chance/Стул Сова.png" alt="Стул Сова">
+                    <div class="last-chance__items-flex">
+                        <div class="last-chance__decor-hover"></div>
+                        <p class="last-chance__name">Стул "Сова"</p>
+                        <p class="last-chance__price-sale">$240<span class="last-chance__price">$260</span></p>
+                        <div class="last-chance__img">
+                            <img src="img/last_chance/Стул Сова.png" alt="Стул Сова">
+                        </div>
                     </div>
                     <button class="last-chance__button">Купить</button>
                 </div>
                 <div class="last-chance__items">
-                    <div class="last-chance__decor-hover"></div>
-                    <p class="last-chance__name">Стул "Мая"</p>
-                    <p class="last-chance__price-sale">$280<span class="last-chance__price">$330</span></p>
-                    <div class="last-chance__img">
-                        <img src="img/last_chance/Стул Мая.png" alt="Стул Мая">
+                    <div class="last-chance__items-flex">
+                        <div class="last-chance__decor-hover"></div>
+                        <p class="last-chance__name">Стул "Мая"</p>
+                        <p class="last-chance__price-sale">$280<span class="last-chance__price">$330</span></p>
+                        <div class="last-chance__img">
+                            <img src="img/last_chance/Стул Мая.png" alt="Стул Мая">
+                        </div>
                     </div>
                     <button class="last-chance__button">Купить</button>
                 </div>
                 <div class="last-chance__items">
-                    <div class="last-chance__decor-hover"></div>
-                    <p class="last-chance__name">Стул "Месси"</p>
-                    <p class="last-chance__price-sale">$280<span class="last-chance__price">$305</span></p>
-                    <div class="last-chance__img">
-                        <img src="img/last_chance/Стул Месси.png" alt="Стул Месси">
+                    <div class="last-chance__items-flex">
+                        <div class="last-chance__decor-hover"></div>
+                        <p class="last-chance__name">Стул "Месси"</p>
+                        <p class="last-chance__price-sale">$280<span class="last-chance__price">$305</span></p>
+                        <div class="last-chance__img">
+                            <img src="img/last_chance/Стул Месси.png" alt="Стул Месси">
+                        </div>
                     </div>
                     <button class="last-chance__button">Купить</button>
                 </div>
@@ -251,29 +261,16 @@
         </div>
     </footer>
 
-
-
-
-
-
     <!--start burger-menu -->
     <script src="js/menu_burg/jquery-3.4.1.js"></script> 
 	<script src="js/menu_burg/script.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function($) {
-	    $('.header__burger').click(function(event) {
-		$('.header__burger,.header__menu').toggleClass('active'); // открываем/закрываем меню
-		$('body').toggleClass('lock');
-		// не даем странице прокручиваться при открытом меню
-	});
-});
-
-    </script>
     <!-- end burger-menu -->
+
     <!-- start slick slider -->
     <script src="slick/js/jquery/dist/jquery.min.js"></script>
     <script src="slick/js/slick.min.js"></script>
-    <script type="text/javascript">
+    <!-- products-slider -->
+      <script type="text/javascript">
         $(document).ready(function(){
           $('.products-slider').slick({
             arrows: false, //стрелки
@@ -282,13 +279,43 @@
           });
         });
       </script>
+
+      <!-- reviews-slider -->
       <script type="text/javascript">
         $(document).ready(function(){
           $('.reviews-slider').slick({
             arrows: true, //стрелки
             dots: true, // точки внизу слайдера
-            prevArrow: '<div class="slider-arrow slider-arrow__left"></div>',
-            nextArrow: '<div class="slider-arrow slider-arrow__right"></div>'
+            prevArrow: '<div class="slider-arrow slider-arrow__left"></div>', // кастомизированная стрелка
+            nextArrow: '<div class="slider-arrow slider-arrow__right"></div>' // кастомизированная стрелка
+          });
+        });
+      </script>
+
+      <!-- last-chance__slider -->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.last-chance__slider').slick({
+            arrows: false, //стрелки
+            dots: false, // точки внизу слайдера
+            variableWidth: true, //выравнивание ширины по содержимому
+            slidesToShow: 5, // кол-во показываемых слайдов
+            responsive: [ // адаптивность для разной ширины экрана
+                {
+                    breakpoint: 1025,
+                    settings: {
+                       dots: true,
+                       slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                        dots: true,
+                        slidesToShow: 3
+                    }
+                }
+            ] 
           });
         });
       </script>

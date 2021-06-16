@@ -1,6 +1,6 @@
 /*start section.last-chance*/
 .last-chance
-    padding-bottom: 101px
+    padding-bottom: 26px
     &__title
         font-family: 'PlayfairDisplay-Bold', sans-serif
         font-size: 28px
@@ -33,19 +33,21 @@
                 color: #000000
                 text-decoration-line: underline
 
+.last-chance
+    &__slider
+        max-width: 1170px
     &__items
-        display: flex
-        flex-direction: column
-        justify-content: flex-start
-        width: 209px
-        height: 355px
-        background-color: #FFFFFF 
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05)
-        position: relative
+        cursor: pointer
         &-flex
             display: flex
-            justify-content: space-between
-            cursor: pointer
+            flex-direction: column
+            justify-content: flex-start
+            width: 209px
+            height: 355px
+            background-color: #FFFFFF 
+            position: relative
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05)
+            margin-right: 30px
     &__decor-hover
         box-sizing: border-box
         min-width: 209px
@@ -92,7 +94,7 @@
         text-transform: uppercase
         padding: 18px 67px 
         position: relative
-        bottom: -44px
+        bottom: 14px
         opacity: 0 
 
 .last-chance__items:hover
@@ -103,10 +105,4 @@
 .last-chance__items:focus-within
     .last-chance__decor-hover,
     .last-chance__button  
-        opacity: 0.7      
-
-    
-
-
-   
-        
+        opacity: 0.7     
