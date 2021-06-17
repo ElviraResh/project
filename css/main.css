@@ -723,6 +723,7 @@ button, a {
   /*header*/
   .header {
     margin-top: 30px;
+    position: relative;
   }
   .header__logo {
     z-index: 3;
@@ -731,10 +732,7 @@ button, a {
     z-index: 3;
     margin-right: 60px;
   }
-  .container {
-    position: relative;
-  }
-  .container .header__burger {
+  .header__burger {
     display: block;
     position: absolute;
     width: 25px;
@@ -742,7 +740,7 @@ button, a {
     z-index: 5;
     right: 20px;
   }
-  .container .header__burger span {
+  .header__burger span {
     background-color: #313133;
     position: absolute;
     width: 100%;
@@ -751,7 +749,7 @@ button, a {
     top: 9px;
     transition: all 0.3s ease 0s;
   }
-  .container .header__burger::before, .container .header__burger::after {
+  .header__burger::before, .header__burger::after {
     content: '';
     background-color: #313133;
     position: absolute;
@@ -760,36 +758,36 @@ button, a {
     left: 0;
     transition: all 0.3s ease 0s;
   }
-  .container .header__burger::before {
+  .header__burger::before {
     top: 0;
   }
-  .container .header__burger::after {
+  .header__burger::after {
     bottom: 0;
   }
-  .container .header__burger:active::before {
+  .header__burger.active::before {
     background-color: #ffffff;
     transform: rotate(45deg);
     top: 9px;
   }
-  .container .header__burger:active::after {
+  .header__burger.active::after {
     background-color: #ffffff;
     transform: rotate(-45deg);
     bottom: 9px;
   }
-  .container .header__burger:active span {
+  .header__burger.active span {
     transform: scale(0);
   }
-  .container .header__menu {
+  .header__menu {
     position: fixed;
     top: -200%;
     right: 0;
     transition: all 0.3s ease 0s;
     z-index: 4;
   }
-  .container .header__menu:active {
+  .header__menu.active {
     top: 0;
   }
-  .container .header__list {
+  .header__list {
     margin: 0;
     box-sizing: border-box;
     padding: 176px 105px;
@@ -799,11 +797,11 @@ button, a {
     flex-direction: column;
     align-items: center;
   }
-  .container .header__list li {
+  .header__list li {
     margin-right: 0;
     margin-bottom: 65px;
   }
-  .container .header__link {
+  .header__link {
     color: #ffffff;
     font-size: 18px;
     line-height: 100%;
