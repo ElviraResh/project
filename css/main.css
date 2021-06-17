@@ -598,6 +598,7 @@ button, a {
 }
 
 .footer__link {
+  cursor: pointer;
   font-family: 'AvenirNext-Demi', sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -614,6 +615,7 @@ button, a {
 }
 
 .footer__connection-phone, .footer__connection-email {
+  cursor: pointer;
   display: flex;
   align-items: center;
   font-family: 'Roboto-Regular', sans-serif;
